@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    :focus {
+      border: 2px solid blue;
+      background: gainsboro;
+    }
+    form {
+      margin: 10px;
+      border: 2px solid;
+      box-shadow: 1px 2px 7px;
+    }
+    input {
+      margin-top: 7px;
+      width: 220px;
+    }
+    label {
+      margin-top: 7px;
+      width: 110px;
+    }
+    #sbt {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      width: 100px;
+      background-color: rgb(20, 20, 239);
+      color: white;
+      border-radius: 15px;
+      border: solid;
+      padding: 7px;
+      font-size: larger;
+    }
+    h1 {
+      margin-bottom: 25px;
+      color: blue;
+    }
+    #id {
+      border: 1px solid;
+      height: 105mm;
+      width: 60mm;
+      border-radius: 8px 90px 5px 5px;
+      margin-top: -18px;
+      margin-left: 7px;
+    }
+    #idBack {
+      border: 1px solid;
+      height: 105mm;
+      width: 60mm;
+      border-radius: 90px 8px 5px 5px;
+      margin-top: -18px;
+      margin-left: 7px;
+    }
+    .inner {
+      border: 1px solid;
+      margin: 10px;
+      border-radius: 50px 50px 5px 5px;
+      border: 2px solid;
+      box-shadow: 1px 2px 7px;
+      padding: 5px;
+    }
+    p {
+      font-size: smaller;
+      font-weight: 700;
+      margin-top: 2px;
+      display: inline;
+    }
+    .innerBack {
+      border: 1px solid;
+      margin: 11px;
+      border-radius: 50px 50px 5px 5px;
+      border: 2px solid;
+      box-shadow: 1px 2px 7px;
+      padding: 5px;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  </style>
+  <body style="text-align: center">
+    <!-- student id form -->
+    <div>
+      <div>
+        <form onsubmit="formSubmitt(event)">
+          <h1>Student ID form</h1>
+          <div>
+            <label for="clg">College:</label>
+            <input
+              id="clg"
+              value="Scient Institute Of Technology"
+              readonly
+              type="text"
+            />
+          </div>
+
+          <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" />
+          </div>
+          <div>
+            <label for="photo">Photo:</label>
+            <input id="photo" type="file" accept="image/png,image/jpg" />
+          </div>
+          <div>
+            <label for="course">Course:</label>
+            <input id="course" value="" type="text" />
+          </div>
+          <div>
+            <label for="branch">Branch:</label>
+            <input id="branch" type="text" />
+          </div>
+          <div>
+            <label for="roll">Roll No:</label>
+            <input id="rollNo" type="text" />
+          </div>
+          <div>
+            <label for="validity">Validity:</label>
+            <input id="validity" type="text" />
+          </div>
+
+          <div>
+            <label for="blood">Blood Group:</label>
+            <input id="blood" type="text" />
+          </div>
+          <div>
+            <label for="father">Father's Name:</label>
+            <input id="father" type="text" />
+          </div>
+          <div>
+            <label for="address">Address:</label>
+            <input id="address" type="text" />
+          </div>
+          <div>
+            <label for="house">House.No:</label>
+            <input id="house" type="text" />
+          </div>
+          <div>
+            <label for="colony">Colony:</label>
+            <input id="colony" type="text" />
+          </div>
+          <div>
+            <label for="phone">Phone No:</label>
+            <input id="phone" type="text" />
+          </div>
+          <input id="sbt" type="submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- id frontside -->
+    <h1 style="margin-top: 45px; font-size: 18px; text-align: center">
+      ID Frontside
+    </h1>
+    <div id="id" style="display: none">
+      <div
+        class="hole"
+        style="
+          border: 7px solid;
+          width: 80px;
+          margin-left: 70px;
+          padding: 2px;
+          border-radius: 25px 25px 5px 5px;
+          margin-top: 5px;
+        "
+      ></div>
+      <div class="inner">
+        <div
+          style="
+            background-color: lightblue;
+            height: 100%;
+            width: 100%;
+            margin-top: -4px;
+            border-radius: 50px 50px 5px 5px;
+          "
+        >
+          <div>
+            <img src="./images/img1.jpg" height="55" width="50" alt="" />
+          </div>
+          <div>
+            <h1
+              style="
+                color: red;
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'Times New Roman', Times, serif;
+              "
+            >
+              SCIENT
+            </h1>
+          </div>
+        </div>
+        <div
+          style="
+            background-color: darkblue;
+            color: white;
+            padding: 1px;
+            border-radius: 1px;
+            font-size: 12px;
+            margin-top: -25px;
+          "
+        >
+          <h7>INSTITUTE OF TECHNOLOGY</h7>
+        </div>
+
+        <div
+          style="
+            border: 2px solid;
+            width: 85px;
+            margin-top: 5px;
+            margin-left: 60px;
+            margin-bottom: 2px;
+          "
+          title="Srikanth Polamoni"
+        >
+          <img
+            id="imageId"
+            src="./images/img2.jpg"
+            height="100"
+            width="80"
+            alt=""
+          />
+        </div>
+        <p id="nam" style="font-size: 14px; color: red;">POLAMONI SRIKANTH</p>
+        <div
+          style="
+            margin-left: -155px;
+            margin-top: -8px;
+            text-align: justify;
+            margin-left: 4px;
+            word-wrap: break-word;
+          "
+        >
+          <p>Course:</p>
+          <p id="crs" style="margin-left: 1px; color: darkblue">B.Tech</p>
+          <p style="margin-left: 5px">Branch:</p>
+          <p id="brn" style="margin-left: 1px; color: darkblue">EEE</p>
+          <br />
+          <div style="display: inline-block"><p>Roll No:</p></div>
+
+          <p id="roll" style="color: darkblue">21C05A0214</p>
+          <br />
+          <p>Validity:</p>
+
+          <p id="val" style="color: darkblue">2021-2024</p>
+        </div>
+
+        <div>
+          <img src="./images/clg.png" height="40" width="190" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- id backside -->
+    <h1 style="margin-top: 15px; font-size: 18px; text-align: center">
+      ID Backside
+    </h1>
+    <div id="idBack" style="display: none">
+      <div
+        class="hole"
+        style="
+          border: 7px solid;
+          width: 80px;
+          margin-left: 70px;
+          padding: 2px;
+          border-radius: 25px 25px 5px 5px;
+          margin-top: 5px;
+        "
+      ></div>
+
+      <div class="innerBack">
+        <div style="margin-left: 12px; text-align: justify; margin-top: 4px">
+          <p>B.G:</p>
+          <p id="bG" style="word-wrap: break-word; color: red"></p>
+          <br />
+          <p>Father's Name:</p>
+          <br />
+          <p id="fath" style="color: darkblue"></p>
+          <br />
+
+          <p>Address:</p>
+          <br />
+          <p id="nameBack" style="color: red"></p>
+          <br />
+          <p id="addr" style="color: darkblue"></p>
+          <br />
+          <p>H.No:</p>
+          <p id="hN" style="color: darkblue"></p>
+          <br />
+
+          <p>Colony</p>
+          <p id="col" style="color: darkblue"></p>
+          <br />
+          <p>Ph:</p>
+          <p id="ph" style="color: darkblue"></p>
+        </div>
+
+        <div></div>
+        <p></p>
+        <div style="margin-left: 100px; margin-top: 105px">
+          <p>Principal</p>
+        </div>
+
+        <hr style="margin-top: -1px" />
+
+        <div style="margin-top: -22px">
+          <p style="color: red; font-family: 'Times New Roman', Times, serif">
+            Scient Institute of Technology
+          </p>
+          <div style="line-height: 0.4; word-spacing: -1px">
+            <p style="font-size: 8px; line-height: 1.2">
+              Nagarjuna Sagar Road,Ibrahimpatnam,Ranga Reddy Dist.
+              Ph:07414-123855 <br />
+              Email:scient_insteng@yahoo.co.in. Website:www.scientinst.ac.in
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let clg = document.getElementById("clg");
+      let name = document.getElementById("name");
+      let coruse = document.getElementById("course");
+      let branch = document.getElementById("branch");
+      let rollNo = document.getElementById("rollNo");
+      let validity = document.getElementById("validity");
+      let image = document.getElementById("image");
+      let photo = document.getElementById("photo");
+      let id = document.getElementById("id");
+
+      let blood = document.getElementById("blood");
+      let father = document.getElementById("father");
+      let address = document.getElementById("address");
+      let nameBack = document.getElementById("nameBack");
+      let house = document.getElementById("house");
+      let colony = document.getElementById("colony");
+      let phone = document.getElementById("phone");
+      let idBack = document.getElementById("idBack");
+
+      function formSubmitt(event) {
+        event.preventDefault(event);
+        nam.textContent = name.value;
+
+        crs.textContent = course.value;
+        coruse.value = "";
+
+        brn.textContent = branch.value;
+        branch.value = "";
+
+        roll.textContent = rollNo.value;
+        rollNo.value = "";
+
+        val.textContent = validity.value;
+        validity.value = "";
+
+        imageId.setAttribute("src", photo.value);
+
+        id.style.display = "block";
+
+        bG.textContent = blood.value;
+        blood.value = "";
+
+        fath.textContent = father.value;
+        father.value = "";
+
+        addr.textContent = address.value;
+        address.value = "";
+
+        nameBack.textContent = name.value;
+        name.value = "";
+
+        hN.textContent = house.value;
+        house.value = "";
+
+        col.textContent = colony.value;
+        colony.value = "";
+
+        ph.textContent = phone.value;
+        phone.value = "";
+
+        idBack.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
