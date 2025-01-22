@@ -77,7 +77,6 @@
       border: 2px solid;
       box-shadow: 1px 2px 7px;
       padding: 5px;
-      
     }
     p {
       font-size: smaller;
@@ -94,11 +93,91 @@
       padding: 5px;
       font-size: 14px;
       line-height: 1.2;
-      height: 90mm;
+      height: 94mm;
+    }
+    .hole {
+      border: 7px solid;
+      width: 80px;
+      margin-left: 70px;
+      padding: 2px;
+      border-radius: 25px 25px 5px 5px;
+      margin-top: 5px;
+    }
+    .frt {
+      margin-top: 45px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .innerbg {
+      background-color: lightblue;
+      height: 100%;
+      width: 100%;
+      margin-top: -4px;
+      border-radius: 50px 50px 5px 5px;
+    }
+    .scient {
+      color: red;
+      font-size: 25px;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .inst {
+      background-color: darkblue;
+      color: white;
+      padding: 1px;
+      border-radius: 1px;
+      font-size: 12px;
+      margin-top: -25px;
+    }
+    .photo {
+      border: 2px solid;
+      width: 85px;
+      margin-top: 5px;
+      margin-left: 60px;
+      margin-bottom: 2px;
+    }
+    #nam {
+      font-size: 14px;
+      color: red;
+    }
+    .detailCd {
+      margin-left: -155px;
+      margin-top: -2px;
+      text-align: justify;
+      margin-left: 4px;
+    }
+    #crs,
+    #brn {
+      margin-left: 1px;
+      color: darkblue;
+    }
+    #rol,
+    #val,
+    #fath,
+    #addr,
+    #hN,
+    #col,
+    #ph {
+      color: darkblue;
+    }
+    .innerBack div {
+      margin-left: 12px;
+      text-align: justify;
+      margin-top: 4px;
+    }
+    #bG,
+    #nameBack {
+      color: red;
+    }
+    .nam-back {
+      color: red;
+      font-family: "Times New Roman", Times, serif;
+      margin-left: 12px;
     }
   </style>
   <body style="text-align: center">
     <!-- student id form -->
+
     <div>
       <div>
         <form onsubmit="formSubmitt(event)">
@@ -112,7 +191,6 @@
               type="text"
             />
           </div>
-
           <div>
             <label for="name">Name:</label>
             <input id="name" type="text" />
@@ -137,7 +215,6 @@
             <label for="validity">Validity:</label>
             <input id="validity" type="text" />
           </div>
-
           <div>
             <label for="blood">Blood Group:</label>
             <input id="blood" type="text" />
@@ -168,103 +245,48 @@
     </div>
 
     <!-- id frontside -->
-    <h1 style="margin-top: 45px; font-size: 18px; text-align: center">
-      ID Frontside
-    </h1>
+
+    <h1 class="frt">ID Frontside</h1>
     <div id="id" style="display: none">
-      <div
-        class="hole"
-        style="
-          border: 7px solid;
-          width: 80px;
-          margin-left: 70px;
-          padding: 2px;
-          border-radius: 25px 25px 5px 5px;
-          margin-top: 5px;
-        "
-      ></div>
+      <div class="hole"></div>
       <div class="inner">
-        <div
-          style="
-            background-color: lightblue;
-            height: 100%;
-            width: 100%;
-            margin-top: -4px;
-            border-radius: 50px 50px 5px 5px;
-          "
-        >
+        <div class="innerbg">
           <div>
-            <img src="./img1.jpg" height="55" width="50" alt="" />
+            <img src="./images/img1.jpg" height="55" width="50" alt="" />
           </div>
           <div>
-            <h1
-              style="
-                color: red;
-                font-size: 25px;
-                font-weight: 600;
-                font-family: 'Times New Roman', Times, serif;
-              "
-            >
-              SCIENT
-            </h1>
+            <h1 class="scient">SCIENT</h1>
           </div>
         </div>
-        <div
-          style="
-            background-color: darkblue;
-            color: white;
-            padding: 1px;
-            border-radius: 1px;
-            font-size: 12px;
-            margin-top: -25px;
-          "
-        >
+        <div class="inst">
           <h7>INSTITUTE OF TECHNOLOGY</h7>
         </div>
-
-        <div
-          style="
-            border: 2px solid;
-            width: 85px;
-            margin-top: 5px;
-            margin-left: 60px;
-            margin-bottom: 2px;
-          "
-          title="Srikanth Polamoni"
-        >
+        <div class="photo" title="Srikanth Polamoni">
           <img
             id="imageId"
-            src="./img2.jpg"
+            src="./images/img2.jpg"
             height="100"
             width="80"
             alt=""
           />
         </div>
-        <p id="nam" style="font-size: 14px; color: red;">POLAMONI SRIKANTH</p>
-        <div
-          style="
-            margin-left: -155px;
-            margin-top: -2px;
-            text-align: justify;
-            margin-left: 4px;
-          "
-        >
+        <p id="nam">POLAMONI SRIKANTH</p>
+        <div class="detailCd">
           <p>Course:</p>
-          <p id="crs" style="margin-left: 1px; color: darkblue">B.Tech</p>
+          <p id="crs">B.Tech</p>
           <p style="margin-left: 5px">Branch:</p>
-          <p id="brn" style="margin-left: 1px; color: darkblue">EEE</p>
+          <p id="brn">EEE</p>
           <br />
-          <div style="display: inline-block"><p>Roll No:</p></div>
-
-          <p id="roll" style="color: darkblue">21C05A0214</p>
+          <div style="display: inline-block">
+            <p>Roll No:</p>
+          </div>
+          <p id="roll">21C05A0214</p>
           <br />
           <p>Validity:</p>
-
-          <p id="val" style="color: darkblue">2021-2024</p>
+          <p id="val">2021-2024</p>
         </div>
-
         <div>
-          <img src="./clg.png" height="40" width="190" alt="" />
+          <img src="./images/clg.png" height="40" width="190" alt="" />
         </div>
       </div>
     </div>
@@ -274,59 +296,49 @@
       ID Backside
     </h1>
     <div id="idBack" style="display: none">
-      <div
-        class="hole"
-        style="
-          border: 7px solid;
-          width: 80px;
-          margin-left: 70px;
-          padding: 2px;
-          border-radius: 25px 25px 5px 5px;
-          margin-top: 5px;
-        "
-      ></div>
-
+      <div class="hole"></div>
       <div class="innerBack">
-        <div style="margin-left: 12px; text-align: justify; margin-top: 4px">
+        <div>
           <p>B.G:</p>
-          <p id="bG" style="word-wrap: break-word; color: red"></p>
+          <p id="bG"></p>
           <br />
           <p>Father's Name:</p>
           <br />
-          <p id="fath" style="color: darkblue"></p>
+          <p id="fath"></p>
           <br />
-
           <p>Address:</p>
           <br />
-          <p id="nameBack" style="color: red;line-height: ;"></p>
+          <p id="nameBack"></p>
           <br />
-          <p id="addr" style="color: darkblue"></p>
+          <p id="addr"></p>
           <br />
           <p>H.No:</p>
-          <p id="hN" style="color: darkblue"></p>
+          <p id="hN"></p>
           <br />
-
           <p>Colony</p>
-          <p id="col" style="color: darkblue"></p>
+          <p id="col"></p>
           <br />
           <p>Ph:</p>
-          <p id="ph" style="color: darkblue"></p>
+          <p id="ph"></p>
         </div>
 
-        <div></div>
-        <p></p>
-        <div style="margin-left: 100px; margin-top: 105px">
+        <!--           barcode              -->
+
+        <div style="margin-left: 115px; margin-top: 100px">
           <p>Principal</p>
         </div>
-
         <hr style="margin-top: -1px" />
-
         <div style="margin-top: -22px">
-          <p style="color: red; font-family: 'Times New Roman', Times, serif">
-            Scient Institute of Technology
-          </p>
-          <div style="line-height: 0.4; word-spacing: -1px">
-            <p style="font-size: 8px; line-height: 1.2">
+          <p class="nam-back">Scient Institute of Technology</p>
+          <div
+            style="
+              line-height: 0.7;
+              letter-spacing: -0.1mm;
+              text-align: center;
+              margin-top: -2px;
+            "
+          >
+            <p style="font-size: 8px">
               Nagarjuna Sagar Road,Ibrahimpatnam,Ranga Reddy Dist.
               Ph:07414-123855 <br />
               Email:scient_insteng@yahoo.co.in. Website:www.scientinst.ac.in
